@@ -1,14 +1,8 @@
 version: '3'
 services:
-  react-node-web:
-    stdin_open: true
-    environment:
-      - CHOKIDAR_USEPOLLING=true
+  web:
     build:
       context: .
-      dockerfile: dockerfile.dev
+      dockerfile: Dockerfile
     ports:
-      - '3000:3000'
-    volumes:
-      - /usr/app/node_modules
-      - .:/usr/app
+      - '80:80'
