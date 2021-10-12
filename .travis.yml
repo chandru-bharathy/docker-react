@@ -19,5 +19,5 @@ script:
   env: "Dockerreactapp-env"
   bucket_name: "elasticbeanstalk-ap-south-1-557607322690"
   bucket_path: "Docker-react-app"
-  on:
-    branch: master
+  
+  
